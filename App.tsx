@@ -1,9 +1,15 @@
 import { StyleSheet, View } from "react-native";
+import { messages } from "./messageData";
+import MessageList from "./Messages";
 
+/**
+ * In order to focus on feedback for React and React Native,
+ * messages are loaded via a file import.
+ */
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <MessageList messages={messages} />
     </View>
   );
 }
